@@ -114,7 +114,7 @@ class Service{
         }
     }
 
-    fetFilePreview(fileId){
+    getFilePreview(fileId){
         return this.bucket.getFilePreview(
             conf.appwriteBucketId,
             fileId  
