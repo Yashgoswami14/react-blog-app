@@ -7,6 +7,7 @@ export class AuthService {
     account;
 
     constructor() {
+        console.log("appwirte URL: ",conf.appwriteUrl)
         this.client
             .setEndpoint(conf.appwriteUrl)
             .setProject(conf.appwriteProjectId);
